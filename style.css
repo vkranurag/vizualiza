@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("https://wallpaperaccess.com/full/2147.jpg");
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+h1{
+    position:absolute;
+    top:2%;
+    left:50%;
+    background: -webkit-linear-gradient( rgb(48, 255, 255), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 60px;
+    transform:translate(-50%,-50%);
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.search {
+    background-color: transparent;
+    border: 2px solid rgb(48, 255, 255);
+    border-radius: 50px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.search::placeholder {
+    color: rgb(48, 255, 255);
+}
+
+.search:focus {
+    background-color: rgb(0, 0, 0);
+    outline: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    background-color: rgb(39, 161, 161);
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 2.4rem;
+    width: 300px;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie-info {
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+    margin: 0;
+}
+
+.movie-info span {
+    background-color: #000000;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+}
+.movie-info span.green {
+    color: rgb(39, 189, 39);
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: rgb(189, 42, 42);
+}
+
+.overview {
+    background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.overview h3 {
+    margin-top: 0;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
+
+.navbar-brand{
+    position:absolute;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(48, 255, 255);
+    top:2%;
+    left:1%;
+    text-align: center;
+    border-radius: 50px;
+    color: rgb(48, 255, 255);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem; 
+}
