@@ -1,4 +1,4 @@
-# vizualiza
+# VIZUALIZA
 
 VIZUALIZA fetches data from the amazing TMDB API,  consisting of movies from over 40+ languages of various genres. It also provides some information about the movie of your choice and a very attractive and simple poster.
 
